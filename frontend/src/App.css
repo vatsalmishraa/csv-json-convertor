@@ -1,0 +1,28 @@
+.app-container {
+  min-height: 100vh;
+}
+
+.badge {
+  font-size: 0.8rem;
+  padding: 0.5rem 0.8rem;
+}
+
+.text-key {
+  color: #388e3c;
+}
+
+.text-string {
+  color: #d32f2f;
+}
+
+.text-number {
+  color: #1976d2;
+}
+
+.text-boolean {
+  color: #ff8f00;
+}
+
+.text-null {
+  color: #757575;
+}

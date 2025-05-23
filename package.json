@@ -1,0 +1,35 @@
+{
+  "name": "csv-json-converter",
+  "version": "1.0.0",
+  "description": "CSV to JSON converter API",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "ts-node-dev src/server.ts",
+    "client": "cd frontend && npm start",
+    "client-install": "cd frontend && npm install",
+    "client-build": "cd frontend && npm run build",
+    "dev-full": "concurrently \"npm run dev\" \"cd frontend && PORT=3001 npm start\"",
+    "heroku-postbuild": "npm run client-install && npm run client-build"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1",
+    "pg": "^8.11.3",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.18",
+    "@types/express": "^4.17.21",
+    "@types/multer": "^1.4.11",
+    "@types/node": "^20.10.5",
+    "@types/pg": "^8.10.9",
+    "@types/uuid": "^10.0.0",
+    "concurrently": "^8.2.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3"
+  }
+}
