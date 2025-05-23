@@ -28,7 +28,7 @@ A full-stack web application that converts CSV files to JSON, provides data visu
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/yourusername/csv-json-converter.git
+   git clone https://github.com/vatsalmishraa/csv-json-convertor
    cd csv-json-converter
    ```
 
